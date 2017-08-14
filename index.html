@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="mainController">
+
+<head>
+    <meta charset="UTF-8">
+    <title>慵藍珊瑚</title>
+    <link rel="stylesheet" href="stylesheets/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+    <div class="restaurant transition active" ng-class="{active:isRestaurantShow}">
+        <div class="navbar-shadow"></div>
+        <div class="navbar navbar-fixed">
+            <ul id="nav-mobile" class=" hide-on-med-and-down">
+                <li class="transition"><a href="#about" class="ghost-link" du-smooth-scroll>關於我們</a></li>
+                <li class="transition"><a href="#brunch" class="ghost-link" du-smooth-scroll>早午餐</a></li>
+                <li class="transition"><a href="#meal" class="ghost-link" du-smooth-scroll>手工簡餐</a></li>
+                <li class="transition"><a href="#drink" class="ghost-link" du-smooth-scroll>飲料</a></li>
+                <li class="transition"><a href="#traffic" class="ghost-link" du-smooth-scroll>交通</a></li>
+            </ul>
+        </div>
+        <div class="section-shadow"></div>
+        <div id="about" class="section section-top section-group">
+            <div class="section section-content">
+            </div>
+            <div class="section section-background section-about"></div>
+        </div>
+        <div id="brunch" class="section section-group">
+            <div class="section section-content">
+                <div class="content-body">
+                    <div class="col s8">
+                        <ul class="menu-list">
+                            <li class="list-title">早午餐 Brunch $180</li>
+                            <li>
+                                <p>招牌漢堡餐</p>
+                                <p class="subtext">SleepyLaggon Burger Set</p>
+                            </li>
+                            <li>
+                                <p>美式熱狗堡餐</p>
+                                <p class="subtext">America HotDog Bun Set</p>
+                            </li>
+                            <li>
+                                <p>煙燻肉吐司餐</p>
+                                <p class="subtext">Bacon Ham Toast Set</p>
+                            </li>
+                            <li>
+                                <p>阿粨餐</p>
+                                <p class="subtext">Abai Special Set</p>
+                            </li>
+                            <li>
+                                <p>蘑菇洋蔥蛋炒飯餐</p>
+                                <p class="subtext">Fried Rice with Mushroo, Onion Egg</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s4">
+                    </div>
+                </div>
+                <div class="content-footer">
+                    <p>以上均附新鮮果汁 水果 生菜 蛋 飲料(咖啡/茶/鮮奶三選一)</p>
+                </div>
+            </div>
+            <div class="section section-background section-brunch"></div>
+        </div>
+        <div id="meal" class="section section-group">
+            <div class="section section-content">
+                <div class="content-body">
+                    <div class="col s8">
+                        <ul class="menu-list">
+                            <li class="list-title">手工簡餐 Meal $250</li>
+                            <li>
+                                <p>紅醬義大利麵</p>
+                                <p class="subtext">Capellini Tomato Sauce</p>
+                            </li>
+                            <li>
+                                <p>奶油培根義大利麵</p>
+                                <p class="subtext">Capellini in Cream Sauce</p>
+                            </li>
+                            <li>
+                                <p>蕃茄燉牛肉飯</p>
+                                <p class="subtext">Tomato Beef Stew with Rice</p>
+                            </li>
+                            <li>
+                                <p>焗烤牛肉飯</p>
+                                <p class="subtext">Beef and Rice with Backed Cheese Topping</p>
+                            </li>
+                            <li>
+                                <p>德式香腸炒飯</p>
+                                <p class="subtext">Fried Rice with German Sausage</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s4"></div>
+                </div>
+                <div class="content-footer">
+                    <p>以上均附湯品 水果 飲料(咖啡/茶/汽水三選一)</p>
+                </div>
+            </div>
+            <div class="section section-background section-meal"></div>
+        </div>
+        <div id="drink" class="section section-group">
+            <div class="section section-content">
+                <div class="content-body">
+                    <div class="col s8">
+                        <ul class="menu-list">
+                            <li class="list-title">飲料 Drink</li>
+                            <li>
+                                <p>特選咖啡(冰/熱) $100</p>
+                                <p class="subtext">SleepyLaggon Coffee (Iced or Hot)</p>
+                            </li>
+                            <li>
+                                <p>精品咖啡 $200/壺</p>
+                                <p class="subtext">Estate-grown Coffee</p>
+                            </li>
+                            <li>
+                                <p>汽水 $30</p>
+                                <p class="subtext">Coke Sprite</p>
+                            </li>
+                            <li>
+                                <p>罐裝啤酒 $80</p>
+                                <p class="subtext">Can</p>
+                            </li>
+                            <li>
+                                <p>小瓶裝啤酒 $80</p>
+                                <p class="subtext">Small Bottle</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s4"></div>
+                </div>
+                <div class="content-footer">
+                    <p>罐裝啤酒買二送一</p>
+                </div>
+            </div>
+            <div class="section section-background section-drink"></div>
+        </div>
+        <div id="traffic" class="section section-group">
+            <div class="section section-content"></div>
+            <div class="section section-background section-traffic"></div>
+        </div>
+        <div id="album"></div>
+    </div>
+</body>
+<script src="javascripts/angular.min.js "></script>
+<script src="javascripts/angular-scroll.min.js"></script>
+<script src="javascripts/jquery-3.2.1.min.js"></script>
+<script src="javascripts/materialize.min.js"></script>
+<script src="javascripts/main.js "></script>
+
+</html>
